@@ -1,6 +1,5 @@
 # LUFFY Development Repository
 
-
 > 🚧 **Development Branch** - This is the main development repository for LUFFY (Learning to Reason Under Off‑Policy Guidance)
 
 ## About LUFFY
@@ -46,6 +45,7 @@ LUFFY/
 - Many functions contain TODO markers indicating pending work
 - API integrations (OpenAI, Gemini) are currently placeholder implementations
 - FSDP and distributed training features need completion
+
 
 ### 🔴 High Priority TODOs
 
@@ -213,15 +213,14 @@ LUFFY/
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:50** - Implement reward computation for different data sources
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:53** - Add support for parallel processing of reward computation
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:54** - Implement proper sequence decoding and validation
-- [ ] **luffy/verl/verl/trainer/main_ppo.py.py:55** - Add thread-safe logging and debugging functionality
+- [ ] **luffy/verl/verl/trainer/main_ppo.py:55** - Add thread-safe logging and debugging functionality
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:56** - Optimize memory usage for large batch processing
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:62** - Extract and validate prompt and response sequences
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:63** - Decode sequences to text format
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:64** - Apply appropriate reward function based on data source
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:65** - Handle edge cases and error conditions
-- [ ] **luffy/verl/verl/trainer/main_ppo.py.py:70** - Implement batch-wise reward computation
+- [ ] **luffy/verl/verl/trainer/main_ppo.py:70** - Implement batch-wise reward computation
 - [ ] **luffy/verl/verl/trainer/main_ppo.py:71** - Add proper error handling and validation
-- [ ] **luffy/verl/verl/trainer/main_ppo.py:129** - add other ways to estimate advantages
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:129** - add other ways to estimate advantages
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:207** - add response length
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:330** - support each role have individual ray_worker_group_cls,
@@ -239,7 +238,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/utils/torch_functional.py:362** - add them back
 - [ ] **luffy/verl/verl/workers/actor/megatron_actor.py:158** - (zhangchi.usc1992): actually, this function should only return log_prob and this logic should be handled by user outside
 - [ ] **luffy/verl/verl/workers/actor/megatron_actor.py:225** - actually, we just need to control the sampling order.
-- [ ] **luffy/verl/verl/workers/actor/megatron_actor.py.py:301** - we may use the new schedule instead
+- [ ] **luffy/verl/verl/workers/actor/megatron_actor.py:301** - we may use the new schedule instead
 - [ ] **luffy/verl/verl/workers/critic/megatron_critic.py:176** - we may use the new schedule instead
 - [ ] **luffy/verl/verl/workers/fsdp_workers.py:88** - (sgm): support FSDP hybrid shard for larger model
 - [ ] **luffy/verl/verl/workers/fsdp_workers.py:117** - it seems that manual offload is slowly than FSDP offload
@@ -270,7 +269,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:122** - Current impl doesn't consider FSDP with torch micro-dp
 - [ ] **luffy/verl/verl/workers/sharding_manager/fsdp_vllm.py:130** - shall we build a micro_dp group for vllm when integrating with vLLM?
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:76** - after binding to the memory buffer, we can load the checkpoint here
-- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -&gt; vLLM
+- [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:253** - (sgm): this may not be true for FSDP -> vLLM
 - [ ] **luffy/verl/verl/workers/sharding_manager/megatron_vllm.py:323** - (zhangchi.usc1992) We can consider copy non-tp weight to another infer buffer.
 
 ## 🤝 Contributing
